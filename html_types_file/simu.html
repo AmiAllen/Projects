@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiggy - Sign In</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+        .container {
+            max-width: 400px;
+            margin: 100px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #f44242; /* Swiggy red color */
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #f44242; /* Swiggy red color */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #e63a3a; /* Darker shade of Swiggy red color */
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+        /* Animation for racing car */
+        .racing-car {
+            position: fixed;
+            bottom: 0;
+            left: -100px; /* Initial position outside the viewport */
+            animation: moveCar 10s linear infinite; /* Adjust animation duration as needed */
+            z-index: -1;
+        }
+        @keyframes moveCar {
+            0% { left: -100px; } /* Start position */
+            100% { left: calc(100% + 100px); } /* End position (100% + car width) */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Swiggy - Sign In</h2>
+        <form id="signin-form" action="#" method="POST">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign In</button>
+        </form>
+        <div class="footer">
+            <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+        </div>
+    </div>
+    <!-- Racing car image -->
+    <img src="https://www.pngitem.com/pimgs/m/13-138378_race-car-icon-png-transparent-png.png" alt="Racing Car" class="racing-car">
+</body>
+</html>
++

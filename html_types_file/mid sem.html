@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div
+        {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(237, 26, 26);
+            animation-name: zoom-in-zoom-out;
+            animation-duration: 4s;
+        }
+        @keyframes zoom-in-zoom-out {
+            0%{
+                transform: translateY(10px);
+            }
+            50%{
+                transform: translateX(20px)
+            }
+            100%
+            {
+                transform: rotate(20deg);
+            }
+        }
+        div:hover{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        
+    </div>
+    
+    <script>
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<html>
+    <head>
+        <title>
+            Manchester United Official Site
+        </title>
+        <link rel="icon" href="path/to/your/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="manutd.css"> 
+
+        <style>
+            body{
+    margin: 0;
+}
+
+.navbar1{
+    background-color: #0a0404;
+    overflow: hidden;
+    text-align: right;
+}
+
+.navbar1 a {
+    float: left;
+    display: block;
+    color: rgb(19, 2, 2);
+    text-align: left;
+    padding: 1px;
+    text-decoration: none;
+}
+.navbar1 a:hover {
+    background-color: #ddd;
+    color: rgb(233, 227, 227);
+}
+
+.navbar1 li
+{
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.navbar2
+{
+    background-color: #f10d0d;
+    overflow: hidden;
+    text-align: left;
+   
+}
+
+
+.navbar2 a {
+    flex-direction: row;
+    display: block;
+    color: rgb(248, 241, 241);
+    text-align: left;
+    padding: 9px 7px;
+    text-decoration: none;
+}
+
+.navbar2 a:hover{
+    background-color:#f0efef;
+    color: rgb(12, 1, 1);
+}
+
+.navbar2 li{
+    margin-right: 2px;
+    display: inline-block;
+}
+.search-button {
+background-color: #DA291C;
+color: #FFF;
+border: none;
+padding: 10px 20px;
+font-size: 16px;
+cursor: pointer;
+border-radius: 5px;
+transition: background-color 0.3s ease;
+}
+
+/* Style for the search button on hover */
+.search-button:hover {
+background-color: #B72A1D;
+}
+
+/* Style for the search input */
+.search-input {
+padding: 10px;
+border-radius: 5px;
+border: 1px solid #CCC;
+margin-left: 10px;
+width: 200px;
+transition: width 0.3s ease;
+}
+
+/* Style for the search input when focused */
+.search-input:focus {
+width: 300px;
+}
+.srch
+{
+    text-align: right;
+}
+.photo-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 20px;
+    }
+
+    .photo-item {
+        width: 200px;
+        height: 150px;
+        overflow: hidden;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .photo-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+
+    .photo-item:hover img {
+        transform: scale(1.1); /* Zoom effect on hover */
+    }
+
+    </style>
+    </head>
+    <body>
+        <div class="navbar1">
+            
+            <ul>
+                <li><a href="#"><img src="adidas.webp" alt="" width="30" height="30"></a></li>
+                <li><a href="#"><img src="Team_Viewer_TeamViewer_logo.webp" alt="" width="100" height="18"></a></li>
+                <li><a href="#"><img src="tezos.jpg" alt="" width="30" height="30"></a></li>
+                <li><a href="#"><img src="dxc_technology-logo_brandlogos.net_utsyy-512x512.webp" alt="" width="50" height="30"></a></li>
+                </ul>
+        </div>
+
+        <div class="navbar2">
+            <ul>
+                <li><a href="#"><img src="1-2-manchester-united-logo-png.webp" alt="" width="50" height="50"></a></li>
+                <li><a href="#">Latest</a></li>
+                <li><a href="#">MUTV</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">Tickets</a></li>
+                <li><a href="#">Fans</a></li>
+            </ul>
+            <div class="srch">
+                <form action="#" method="get" class="search-form">
+                    <input type="text" name="search" id="searchInput" class="search-input" placeholder="Search...">
+                    <button type="submit" class="search-button">Search</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="photo-container">
+            <div class="photo-item">
+                <img src="" alt="Photo 1">
+            </div>
+            <div class="photo-item">
+                <img src="photo2.jpg" alt="Photo 2">
+            </div>
+            <div class="photo-item">
+                <img src="photo3.jpg" alt="Photo 3">
+            </div>
+        </div>
+    </body>
+</html>

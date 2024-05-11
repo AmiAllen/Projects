@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ok
+        {
+            background-color: gold;
+            line-height: 5px;
+        }
+    </style>
+</head>
+<body id="100">
+    <p>sxsax</p>
+    <p>
+        ssdsas
+    </p>
+    <p>dasdasas</p>
+    <p>dsdasdaxa
+
+    </p>
+    <div id="1000">
+    <div class="200">
+        <p class="1">sasdasda</p>
+        <p class="1">sasdassaasdassx</p>
+        <p class="1"></p>
+    </div></div>
+    <h1 id="demo"></h1>
+    <h1 id="demo1"></h1>
+    <h1 id="demo2"></h1>
+    <input type="button" name="name" value="click me!" onclick="count()"><br><br>
+    <button type="button" onclick="count1()">click me</button><br><br>
+    <button type="button" onclick="count2()">ch</button>
+
+    <!--<div class="ok">
+        <p>dndsndsnsdnc</p>
+        <p>jdbsfbsibnsn</p>
+        <p>dsibfdsbssdshuifhsu</p>
+    </div>-->
+    <!--<div class="ok">
+        ansdsnsncnsdncsdcdscsdc
+        cdscdsc
+        dwedxwdxw
+    </div>
+    <br>
+    <div class="ok">
+        <span class="ok">bruh</span>
+    </div>-->
+    <script>
+        
+        function count()
+        {
+            let element = document.getElementsByTagName("p");
+            console.log(element);
+            document.getElementById("demo").innerHTML = element.length;
+        }
+        function count1()
+        {
+            let element = document.getElementById("1000");
+            let element1 = element.getElementsByTagName("p");
+            document.getElementById("demo2").innerHTML = element1.length;
+        }
+        function count2()
+        {
+            let ele = document.getElementById("100");
+            let element = ele.getElementsByClassName("ok");
+            let element1 = element.getElementsByTagName("p");
+            document.getElementById("demo").innerHTML=element1.length
+        }
+
+        
+    </script>
+</body>
+</html>

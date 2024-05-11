@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Capital Letter Converter</title>
+    <script>
+        function convertToCapital() {
+            var bodyText = document.body.innerText;
+            var lines = bodyText.split('\n');
+            var capitalizedLines = lines.map(function(line) {
+                return line.charAt(0).toUpperCase() + line.slice(1);
+            });
+            document.body.innerText = capitalizedLines.join('\n');
+        }
+    </script>
+</head>
+<body>
+    <h1>convert Starting Letters to Capital</h1>
+    <p>this is a paragraph.</p>
+    <p>another line of text.</p>
+    <button onclick="convertToCapital()">Convert to Capital</button>
+</body>

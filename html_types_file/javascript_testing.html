@@ -1,0 +1,149 @@
+<html>
+    <head>
+        <title>testing out javascript</title>
+        <style>
+            #container
+            {
+                width: 400px;
+                height: 400px;
+                position: relative;
+                background: #000000;
+            }
+            #box
+            {
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                background-color: crimson;
+            }
+        </style>
+    </head>
+    <body id="100">
+        <h1>prompt() tag</h1>
+        <p id="">showing how the prompt tag works in javascript</p>
+        <button type="button" onclick="amy2()">click me!</button>
+        <!--<h1>
+            [Will teach how javascript works]
+        </h1>
+        <p id="">
+            My two goats in football.
+        </p>
+        <button type="button" onclick="amy()">Click Me to see it</button>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <script>
+            function amy()
+            {
+                document.getElementById("demo1").innerHTML= "Cristiano Ronaldo";
+                document.getElementById("demo2").innerHTML= "Luka Modric";
+            }
+        </script>-->
+        <!--<h1>Converting 77 faherheit to celcius</h1>
+
+        <p id="1">The answer is. </p>
+        <button onclick="myfunction()">click me.</button>
+        
+        <script>
+            function myfunction(f)
+            {
+                return (5/9) * (f-32);
+            }
+            let value = myfunction(77);
+            window.alert(value);
+        </script>-->
+        <!--<h1>showing you the levels</h1>
+        <script>
+            const c = 100;
+            function myfunction(a,b)
+            {
+                return a*b + c;
+            }
+            window.alert(myfunction(1,2))
+
+            let sum = (a,b) => a*b +c
+            alert(sum(2,2));
+        </script>-->
+        <!--<h1>testing out javascript objects</h1>
+        <p>will see ronaldo age today</p>
+
+        <p id="demo"></p>
+
+        <button onclick="function1()">Try me to see</button>
+
+        <script>
+            const student =
+            {
+                first_name: "Cristiano",
+                last_name: "Ronaldo",
+                age: 38
+            };
+            const {first_name,last_name,age} = student;
+            function myfunction()
+            {}
+            document.getElementById("demo").innerHTML= first_name + " is "+ last_name + " " + age + " years old";
+        </script>-->
+        <!--<h1 id="all">Printing the club players name</h1>
+        <p id="demo">sddsfsdfsdfsssss</p>
+        <p id="1000">ddkjsksdbhjbdhjbhjebhjerbhjerbe</p>
+
+        <button type="button" onclick="document.getElementById('100').style.background='gold'">Click me!</button>
+
+        <script>
+            let x = " "
+            const club =
+            {
+                name: "hmm",
+                age: 20,
+                clubs: 
+                [
+                    {name : "Real Madrid", players:["Cristiano Ronaldo","Luka Modric","ozil"]},
+                    {name: "Manchester United",players: ["Wayne rooney","Paul Scholes","ryan giggs"]}
+                ]
+            }
+
+            for(let i in club.clubs)
+            {
+                x += "<h2>" + club.clubs[i].name + "</h2>";
+                for(let j in club.clubs[i].players){
+                    x += club.clubs[i].players[j] + "<br>";
+                }   
+            }
+            document.getElementById("demo").innerHTML= x ;
+            document.getElementById("all").style.fontSize = "70px";
+            document.getElementById("all").style.color="red";
+            //document.getElementById("all").style.display="none";
+            //  to hide the content of the paragraph.
+        </script>
+        <button type="button" onclick="myMove()">Clickghhh me!</button>-->
+
+        <!--<div id="container">
+            <div id="box"></div>
+        </div>-->
+        <p id="demo"></p>
+        <script>
+            /*function myMove() {
+                let id = null;
+                const e1 = document.getElementById("box");   
+                let position = 0;
+                id = setInterval(frame, 5);
+                function frame() {
+                    if (position == 350) {
+                    clearInterval(id);
+                } else {
+                position++; 
+                e1.style.top = position + "px";
+                e1.style.left = position + "px";
+            }
+        }
+    }*/
+    function amy2()
+    {
+        let person = window.prompt("enter your name:");
+        if(person!=null)
+        {
+            document.getElementById("demo").innerHTML=person+"bruh";
+        }
+    }
+    </script>
+    </body>
+</html>

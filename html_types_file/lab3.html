@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Footer Example</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        .content {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: sticky;
+            bottom: 0;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline-flex;
+            margin-right: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            position: relative;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        a::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #dc6464;
+            transform: scaleX(0);
+        }
+
+        a:hover, a:focus {
+            transform: translateY(-3px);
+        }
+
+        a:hover::before, a:focus::before {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+            background-color: aqua;
+        }
+        h1{
+            background-color: goldenrod;
+            width: 150px;
+            text-align: center;
+            animation: zoom-in-zoom;
+            animation-duration: 1s;
+        }
+        @keyframes zoom-in-zoom{
+            0%{
+                transform: scale(0,0);
+            }
+            50%{
+                transform: scale(1,1);
+            }
+            100%{
+                transform: scale(0,0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <h1>Main Content</h1>
+        <p>Latest porn </p>
+        <p>Price :-100000</p>
+    </div>
+    
+    <div class="footer">
+        <p>Sticky Footer &copy; 2024</p>
+    </div>
+</body>
+</html>

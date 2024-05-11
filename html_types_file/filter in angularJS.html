@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="filterApp">
+
+<head>
+    <title>AngularJS Filter Example</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="quiz1.js"></script>
+</head>
+
+<body>
+    <div ng-controller="FilterController">
+        <input type="text" ng-model="searchQuery" placeholder="Search...">
+        <ul>
+            <li ng-repeat="item in items | filter:searchQuery">{{item}}</li>
+        </ul>
+    </div>
+</body>
+</html>
